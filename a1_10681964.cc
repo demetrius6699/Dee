@@ -4,22 +4,22 @@ using namespace std;
 int main() 
 {
   int n, i;
-  bool isPrime = true;
+  bool Prime = true;
   
-  cout<< "Enter a positive integer: ";
+  cout<< "Please enter a positive number: ";
   cin  >> n;
   
   for(i = 2; i<= n / 2; ++i)
   {
   	if(n % i == 0)
   	{
-  		isPrime = false;
+  		Prime = false;
   		break;
   	}
   }	
-  if (isPrime)
-  	cout<< "This is a prime number";
+  if (Prime)
+  	cout<< "It is a prime number";
   else
-  	cout<< "This is not a prime number";
+  	cout<< "It is not a prime number";
 	return 0;
 }
